@@ -1,0 +1,44 @@
+services:
+  web1:
+    build:
+      context: ./web1
+      dockerfile: ./Dockerfile.web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web1/web:/usr/share/nginx/html/web
+      - ./web1/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./web1/logs:/var/log/app
+    depends_on:
+      - php1
+      - worker1
+    restart: unless-stopped
+
+  worker1:
+    build:
+      context: ./web1
+      dockerfile: ./Dockerfile.worker
+    volumes:
+      - ./web1/scripts:/opt/app/scripts
+      - ./web1/logs:/var/log/app
+      - ./:/hostfs:ro
+      - /proc:/host/proc:ro
+      - ./web1/web/airplanes.json:/var/log/app/airdata/airplanes.json
+      - ./web1/web/apod.jpg:/opt/app/scripts/nasa/apod.jpg
+  php1:
+    image: php:8.2-fpm-alpine
+    volumes:
+      - ./web1/web:/usr/share/nginx/html/web
+      - ./web1/logs:/var/log/app
+    restart: unless-stopped
+
+  web2:
+    build:
+      context: ./web2/
+      dockerfile: ./Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - ./web2/index.html:/usr/share/nginx/html/index.html
+      - ./web2/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped
