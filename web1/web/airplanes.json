@@ -1,522 +1,842 @@
 [
   {
-    "callsign": "TVF26YV ",
-    "origin_country": "France",
-    "lat": 50.1145,
-    "lon": 14.2742,
-    "alt": null,
-    "velocity": 5.14
+    "callsign": "EXS21U  ",
+    "origin_country": "United Kingdom",
+    "lat": 50.6262,
+    "lon": 11.6902,
+    "alt": 10972.8,
+    "velocity": 212.05
   },
   {
-    "callsign": "SWR4QZ  ",
-    "origin_country": "Switzerland",
-    "lat": 49.7851,
-    "lon": 11.6968,
-    "alt": 12192,
-    "velocity": 206.72
-  },
-  {
-    "callsign": "MBU8DT  ",
-    "origin_country": "Estonia",
-    "lat": 51.423,
-    "lon": 12.2103,
-    "alt": null,
-    "velocity": 12.35
-  },
-  {
-    "callsign": "DLH7HP  ",
+    "callsign": "DLH5JW  ",
     "origin_country": "Germany",
-    "lat": 50.0102,
-    "lon": 13.2808,
-    "alt": 10264.14,
-    "velocity": 203.22
-  },
-  {
-    "callsign": "DLH3FM  ",
-    "origin_country": "Germany",
-    "lat": 48.6168,
-    "lon": 12.3182,
-    "alt": 1699.26,
-    "velocity": 150.38
-  },
-  {
-    "callsign": "DLH2XV  ",
-    "origin_country": "Germany",
-    "lat": 48.348,
-    "lon": 11.7954,
-    "alt": null,
-    "velocity": 5.14
-  },
-  {
-    "callsign": "EWG28N  ",
-    "origin_country": "Germany",
-    "lat": 49.8146,
-    "lon": 12.9355,
-    "alt": 11597.64,
-    "velocity": 209.91
-  },
-  {
-    "callsign": "AUA319  ",
-    "origin_country": "Austria",
-    "lat": 48.6684,
-    "lon": 15.5991,
-    "alt": 8382,
-    "velocity": 195.2
+    "lat": 48.6681,
+    "lon": 12.361,
+    "alt": 2392.68,
+    "velocity": 148.12
   },
   {
     "callsign": "EWG1RC  ",
     "origin_country": "Germany",
-    "lat": 50.2914,
-    "lon": 14.3619,
+    "lat": 49.4494,
+    "lon": 15.9274,
+    "alt": 8328.66,
+    "velocity": 200.16
+  },
+  {
+    "callsign": "AUA25M  ",
+    "origin_country": "Austria",
+    "lat": 50.6321,
+    "lon": 14.0433,
     "alt": 11590.02,
-    "velocity": 218.19
+    "velocity": 219.68
   },
   {
-    "callsign": "DLH1V   ",
-    "origin_country": "Germany",
-    "lat": 48.5646,
-    "lon": 12.8073,
+    "callsign": "WMT937  ",
+    "origin_country": "Hungary",
+    "lat": 49.0714,
+    "lon": 14.766,
     "alt": 10363.2,
-    "velocity": 211.37
+    "velocity": 215.59
   },
   {
-    "callsign": "LHX02A  ",
+    "callsign": "AUA33J  ",
+    "origin_country": "Austria",
+    "lat": 49.1736,
+    "lon": 11.8469,
+    "alt": 10980.42,
+    "velocity": 213.18
+  },
+  {
+    "callsign": "WZZ1RT  ",
+    "origin_country": "Hungary",
+    "lat": 49.0392,
+    "lon": 17.1585,
+    "alt": 10363.2,
+    "velocity": 202.05
+  },
+  {
+    "callsign": "DLH719  ",
     "origin_country": "Germany",
-    "lat": 48.3452,
-    "lon": 11.8102,
-    "alt": 457.2,
-    "velocity": 54.37
+    "lat": 48.3425,
+    "lon": 11.8137,
+    "alt": 533.4,
+    "velocity": 76.58
   },
   {
-    "callsign": "DLH3WU  ",
+    "callsign": "AUA214  ",
+    "origin_country": "Austria",
+    "lat": 48.5727,
+    "lon": 15.5556,
+    "alt": 4808.22,
+    "velocity": 187.25
+  },
+  {
+    "callsign": "VTZTP   ",
+    "origin_country": "India",
+    "lat": 49.3006,
+    "lon": 11.8627,
+    "alt": 12489.18,
+    "velocity": 265.94
+  },
+  {
+    "callsign": "LHX3KK  ",
+    "origin_country": "Germany",
+    "lat": 48.4387,
+    "lon": 11.6364,
+    "alt": 2286,
+    "velocity": 141.77
+  },
+  {
+    "callsign": "DLH4HF  ",
+    "origin_country": "Germany",
+    "lat": 48.4494,
+    "lon": 12.2612,
+    "alt": 1280.16,
+    "velocity": 114.73
+  },
+  {
+    "callsign": "DLH05E  ",
     "origin_country": "Germany",
     "lat": 48.3606,
-    "lon": 11.7932,
+    "lon": 12.0131,
+    "alt": 1379.22,
+    "velocity": 84.36
+  },
+  {
+    "callsign": "DLH682  ",
+    "origin_country": "Germany",
+    "lat": 48.3561,
+    "lon": 11.7958,
     "alt": null,
-    "velocity": 6.43
+    "velocity": 1.29
   },
   {
-    "callsign": "VIR354  ",
-    "origin_country": "United Kingdom",
-    "lat": 48.3433,
-    "lon": 15.1026,
-    "alt": 10668,
-    "velocity": 271.85
-  },
-  {
-    "callsign": "CFG1RT  ",
-    "origin_country": "Germany",
-    "lat": 48.5424,
-    "lon": 15.1453,
-    "alt": 5486.4,
-    "velocity": 219.46
-  },
-  {
-    "callsign": "EJU16UZ ",
-    "origin_country": "Austria",
-    "lat": 50.1115,
-    "lon": 14.268,
-    "alt": null,
-    "velocity": 4.89
-  },
-  {
-    "callsign": "AUA26Z  ",
-    "origin_country": "Austria",
-    "lat": 48.2781,
-    "lon": 16.511,
-    "alt": 1173.48,
-    "velocity": 97.24
-  },
-  {
-    "callsign": "WZZ36QB ",
-    "origin_country": "Hungary",
-    "lat": 48.9039,
-    "lon": 12.9349,
-    "alt": 8945.88,
-    "velocity": 237.18
-  },
-  {
-    "callsign": "DINFO   ",
-    "origin_country": "Germany",
-    "lat": 51.1478,
-    "lon": 12.3197,
-    "alt": 1584.96,
-    "velocity": 117.81
-  },
-  {
-    "callsign": "CFG9NH  ",
-    "origin_country": "Germany",
-    "lat": 48.373,
-    "lon": 11.9015,
-    "alt": 754.38,
-    "velocity": 66.81
-  },
-  {
-    "callsign": "THY2ZY  ",
-    "origin_country": "Turkey",
-    "lat": 51.5411,
-    "lon": 15.825,
-    "alt": 9258.3,
-    "velocity": 213.47
-  },
-  {
-    "callsign": "JAL408  ",
-    "origin_country": "Japan",
-    "lat": 48.513,
-    "lon": 12.353,
-    "alt": 10668,
-    "velocity": 270.07
-  },
-  {
-    "callsign": "TUI3AX  ",
-    "origin_country": "Germany",
-    "lat": 48.2826,
-    "lon": 13.3508,
-    "alt": 11582.4,
-    "velocity": 210.28
-  },
-  {
-    "callsign": "TVS6SH  ",
-    "origin_country": "Czech Republic",
-    "lat": 49.9301,
-    "lon": 13.3142,
-    "alt": 4305.3,
-    "velocity": 178.81
-  },
-  {
-    "callsign": "OKASF   ",
-    "origin_country": "Czech Republic",
-    "lat": 50.2303,
-    "lon": 15.8619,
-    "alt": 335.28,
-    "velocity": 37.09
-  },
-  {
-    "callsign": "BEL7VN  ",
-    "origin_country": "Belgium",
-    "lat": 48.518,
-    "lon": 15.508,
-    "alt": 4853.94,
-    "velocity": 196.41
-  },
-  {
-    "callsign": "FDB3CF  ",
-    "origin_country": "United Arab Emirates",
-    "lat": 49.33,
-    "lon": 16.6225,
-    "alt": 10340.34,
-    "velocity": 216.2
-  },
-  {
-    "callsign": "FIN50J  ",
-    "origin_country": "Finland",
-    "lat": 50.6654,
-    "lon": 13.0017,
-    "alt": 11574.78,
-    "velocity": 235.19
-  },
-  {
-    "callsign": "AUA28W  ",
+    "callsign": "SAS71T  ",
     "origin_country": "Sweden",
-    "lat": 49.9016,
-    "lon": 14.3419,
-    "alt": 4572,
-    "velocity": 150.51
+    "lat": 50.7975,
+    "lon": 11.9439,
+    "alt": 11277.6,
+    "velocity": 212.18
   },
   {
-    "callsign": "CTN4409 ",
-    "origin_country": "Croatia",
-    "lat": 51.6963,
-    "lon": 13.4988,
-    "alt": 6294.12,
-    "velocity": 182.25
+    "callsign": "EAT492  ",
+    "origin_country": "Slovakia",
+    "lat": 49.6152,
+    "lon": 13.4465,
+    "alt": 12496.8,
+    "velocity": 216.09
   },
   {
-    "callsign": "EZY48QZ ",
-    "origin_country": "United Kingdom",
-    "lat": 50.1068,
-    "lon": 13.684,
-    "alt": 4000.5,
-    "velocity": 185.78
+    "callsign": "GPX8KW  ",
+    "origin_country": "Bulgaria",
+    "lat": 48.4779,
+    "lon": 13.0142,
+    "alt": 10355.58,
+    "velocity": 225.61
+  },
+  {
+    "callsign": "DLH8NL  ",
+    "origin_country": "Germany",
+    "lat": 51.1279,
+    "lon": 13.7647,
+    "alt": null,
+    "velocity": 6.69
+  },
+  {
+    "callsign": "DLH9YX  ",
+    "origin_country": "Germany",
+    "lat": 48.347,
+    "lon": 11.8328,
+    "alt": 632.46,
+    "velocity": 71.53
+  },
+  {
+    "callsign": "DLH4MK  ",
+    "origin_country": "Germany",
+    "lat": 48.3619,
+    "lon": 11.7559,
+    "alt": 922.02,
+    "velocity": 84.88
+  },
+  {
+    "callsign": "EJU82CR ",
+    "origin_country": "Austria",
+    "lat": 50.0297,
+    "lon": 15.6384,
+    "alt": 11277.6,
+    "velocity": 253.81
+  },
+  {
+    "callsign": "AUA167  ",
+    "origin_country": "Austria",
+    "lat": 49.2178,
+    "lon": 12.4714,
+    "alt": 10980.42,
+    "velocity": 218.85
+  },
+  {
+    "callsign": "UAE7V   ",
+    "origin_country": "United Arab Emirates",
+    "lat": 48.971,
+    "lon": 11.8879,
+    "alt": 11582.4,
+    "velocity": 223.11
+  },
+  {
+    "callsign": "SWR948D ",
+    "origin_country": "Switzerland",
+    "lat": 51.8604,
+    "lon": 13.1468,
+    "alt": 4724.4,
+    "velocity": 195.19
+  },
+  {
+    "callsign": "UAE79Y  ",
+    "origin_country": "United Arab Emirates",
+    "lat": 49.2446,
+    "lon": 11.819,
+    "alt": 11887.2,
+    "velocity": 266.03
+  },
+  {
+    "callsign": "TUI1VE  ",
+    "origin_country": "Germany",
+    "lat": 49.7699,
+    "lon": 12.2926,
+    "alt": 11582.4,
+    "velocity": 230.53
+  },
+  {
+    "callsign": "ELY809  ",
+    "origin_country": "San Marino",
+    "lat": 48.6706,
+    "lon": 12.0608,
+    "alt": 10355.58,
+    "velocity": 222.45
+  },
+  {
+    "callsign": "IJM158  ",
+    "origin_country": "Austria",
+    "lat": 48.377,
+    "lon": 12.2011,
+    "alt": 1600.2,
+    "velocity": 102.39
+  },
+  {
+    "callsign": "KLM62R  ",
+    "origin_country": "Kingdom of the Netherlands",
+    "lat": 48.3748,
+    "lon": 16.1146,
+    "alt": 12192,
+    "velocity": 210.02
+  },
+  {
+    "callsign": "R72029  ",
+    "origin_country": "United States",
+    "lat": 49.2004,
+    "lon": 11.8059,
+    "alt": 762,
+    "velocity": 38.12
+  },
+  {
+    "callsign": "DUKE62  ",
+    "origin_country": "United States",
+    "lat": 51.3245,
+    "lon": 12.7359,
+    "alt": 5486.4,
+    "velocity": 116.36
+  },
+  {
+    "callsign": "KLM96C  ",
+    "origin_country": "Kingdom of the Netherlands",
+    "lat": 49.9753,
+    "lon": 13.049,
+    "alt": 10980.42,
+    "velocity": 218.96
+  },
+  {
+    "callsign": "CFVVE   ",
+    "origin_country": "Canada",
+    "lat": 48.3158,
+    "lon": 16.6294,
+    "alt": 10058.4,
+    "velocity": 190.45
+  },
+  {
+    "callsign": "DEIHM   ",
+    "origin_country": "Germany",
+    "lat": 48.3885,
+    "lon": 11.8223,
+    "alt": 944.88,
+    "velocity": 58.71
+  },
+  {
+    "callsign": "THY3AM  ",
+    "origin_country": "Turkey",
+    "lat": 50.0944,
+    "lon": 14.7955,
+    "alt": 2324.1,
+    "velocity": 127.07
+  },
+  {
+    "callsign": "CHX89   ",
+    "origin_country": "Germany",
+    "lat": 48.9561,
+    "lon": 12.2249,
+    "alt": 510.54,
+    "velocity": 32.1
+  },
+  {
+    "callsign": "ALK503  ",
+    "origin_country": "Sri Lanka",
+    "lat": 48.6493,
+    "lon": 13.7544,
+    "alt": 11582.4,
+    "velocity": 216.05
+  },
+  {
+    "callsign": "UAE29V  ",
+    "origin_country": "United Arab Emirates",
+    "lat": 48.8317,
+    "lon": 15.2619,
+    "alt": 12192,
+    "velocity": 227.63
+  },
+  {
+    "callsign": "UAE149  ",
+    "origin_country": "United Arab Emirates",
+    "lat": 48.8504,
+    "lon": 17.1485,
+    "alt": 11582.4,
+    "velocity": 217.93
+  },
+  {
+    "callsign": "RYR51DF ",
+    "origin_country": "Ireland",
+    "lat": 49.8566,
+    "lon": 12.6849,
+    "alt": 11277.6,
+    "velocity": 246.88
+  },
+  {
+    "callsign": "EWG28N  ",
+    "origin_country": "Germany",
+    "lat": 49.3869,
+    "lon": 13.4027,
+    "alt": 10668,
+    "velocity": 224.38
+  },
+  {
+    "callsign": "ARCTS02 ",
+    "origin_country": "Germany",
+    "lat": 50.9945,
+    "lon": 12.5229,
+    "alt": 304.8,
+    "velocity": 62.11
+  },
+  {
+    "callsign": "CYF461  ",
+    "origin_country": "Cyprus",
+    "lat": 49.4909,
+    "lon": 15.001,
+    "alt": 7231.38,
+    "velocity": 222.24
+  },
+  {
+    "callsign": "KAC102  ",
+    "origin_country": "Kuwait",
+    "lat": 50.9048,
+    "lon": 13.5765,
+    "alt": 10668,
+    "velocity": 270.75
+  },
+  {
+    "callsign": "FIN5H   ",
+    "origin_country": "Finland",
+    "lat": 48.9865,
+    "lon": 16.8356,
+    "alt": 6301.74,
+    "velocity": 165.16
+  },
+  {
+    "callsign": "SPSMO   ",
+    "origin_country": "Poland",
+    "lat": 51.8487,
+    "lon": 16.4907,
+    "alt": 464.82,
+    "velocity": 52.08
+  },
+  {
+    "callsign": "LOT2MD  ",
+    "origin_country": "Poland",
+    "lat": 51.2586,
+    "lon": 16.6227,
+    "alt": 9753.6,
+    "velocity": 188.25
+  },
+  {
+    "callsign": "AUA28F  ",
+    "origin_country": "Sweden",
+    "lat": 50.5508,
+    "lon": 13.7178,
+    "alt": 3657.6,
+    "velocity": 140.58
+  },
+  {
+    "callsign": "MMD4342 ",
+    "origin_country": "Denmark",
+    "lat": 49.4408,
+    "lon": 12.5592,
+    "alt": 13106.4,
+    "velocity": 231.4
   },
   {
     "callsign": "ABP423  ",
     "origin_country": "Czech Republic",
-    "lat": 49.9495,
-    "lon": 16.962,
-    "alt": 5958.84,
-    "velocity": 209.66
+    "lat": 49.0468,
+    "lon": 16.1547,
+    "alt": 8229.6,
+    "velocity": 246.5
   },
   {
-    "callsign": "LGL9737 ",
-    "origin_country": "Luxembourg",
-    "lat": 48.3669,
-    "lon": 11.8205,
-    "alt": 426.72,
-    "velocity": 69.94
+    "callsign": "KLM1960 ",
+    "origin_country": "Kingdom of the Netherlands",
+    "lat": 49.4173,
+    "lon": 14.1221,
+    "alt": 12192,
+    "velocity": 212.94
   },
   {
-    "callsign": "LOT416  ",
+    "callsign": "DCS604  ",
+    "origin_country": "Germany",
+    "lat": 50.295,
+    "lon": 12.7901,
+    "alt": 9753.6,
+    "velocity": 179.28
+  },
+  {
+    "callsign": "EVA067  ",
+    "origin_country": "Taiwan",
+    "lat": 48.5049,
+    "lon": 14.0748,
+    "alt": 10972.8,
+    "velocity": 222.88
+  },
+  {
+    "callsign": "LOT373  ",
     "origin_country": "Poland",
-    "lat": 49.5107,
-    "lon": 14.6846,
-    "alt": 11277.6,
-    "velocity": 244.42
+    "lat": 50.6022,
+    "lon": 13.8454,
+    "alt": 10972.8,
+    "velocity": 182.67
   },
   {
-    "callsign": "DBADO   ",
+    "callsign": "DIGCS   ",
     "origin_country": "Germany",
-    "lat": 51.3628,
-    "lon": 11.9389,
-    "alt": 7924.8,
-    "velocity": 210.2
-  },
-  {
-    "callsign": "EZS59RZ ",
-    "origin_country": "Switzerland",
-    "lat": 48.4869,
-    "lon": 16.2214,
-    "alt": 2948.94,
-    "velocity": 158.75
-  },
-  {
-    "callsign": "LIMIT07 ",
-    "origin_country": "Germany",
-    "lat": 48.5757,
-    "lon": 11.9737,
-    "alt": 525.78,
-    "velocity": 27.27
-  },
-  {
-    "callsign": "SAS696  ",
-    "origin_country": "Ireland",
-    "lat": 50.6312,
-    "lon": 14.5763,
-    "alt": 12199.62,
-    "velocity": 226.23
-  },
-  {
-    "callsign": "AUA16A  ",
-    "origin_country": "Austria",
-    "lat": 49.317,
-    "lon": 12.9424,
-    "alt": 10668,
-    "velocity": 242.56
-  },
-  {
-    "callsign": "AUA28R  ",
-    "origin_country": "Austria",
-    "lat": 50.9233,
-    "lon": 13.7692,
-    "alt": 10668,
-    "velocity": 226.15
-  },
-  {
-    "callsign": "AUA189  ",
-    "origin_country": "Austria",
-    "lat": 48.3553,
-    "lon": 11.7969,
-    "alt": null,
-    "velocity": 2.57
-  },
-  {
-    "callsign": "RYR97FL ",
-    "origin_country": "Malta",
-    "lat": 50.0183,
-    "lon": 16.7731,
-    "alt": 10355.58,
-    "velocity": 224.47
-  },
-  {
-    "callsign": "EWG4ER  ",
-    "origin_country": "Germany",
-    "lat": 49.0169,
-    "lon": 14.8731,
-    "alt": 10294.62,
-    "velocity": 208.56
-  },
-  {
-    "callsign": "AUA21H  ",
-    "origin_country": "Austria",
-    "lat": 48.3891,
-    "lon": 16.2395,
-    "alt": 1965.96,
-    "velocity": 141.66
-  },
-  {
-    "callsign": "AUA36P  ",
-    "origin_country": "Austria",
-    "lat": 48.556,
-    "lon": 13.9915,
-    "alt": 10363.2,
-    "velocity": 201.04
-  },
-  {
-    "callsign": "AUA25Y  ",
-    "origin_country": "Austria",
-    "lat": 51.0713,
-    "lon": 13.6488,
-    "alt": 10066.02,
-    "velocity": 250.69
-  },
-  {
-    "callsign": "AUA96J  ",
-    "origin_country": "Austria",
-    "lat": 49.1169,
-    "lon": 15.4844,
-    "alt": 9669.78,
-    "velocity": 221.11
-  },
-  {
-    "callsign": "        ",
-    "origin_country": "Germany",
-    "lat": 51.4092,
-    "lon": 12.2485,
+    "lat": 51.4195,
+    "lon": 12.2156,
     "alt": null,
     "velocity": 0
   },
   {
-    "callsign": "DUSTY10 ",
-    "origin_country": "United States",
-    "lat": 49.695,
-    "lon": 11.9447,
-    "alt": 480.06,
-    "velocity": 51.26
-  },
-  {
-    "callsign": "VJH763  ",
-    "origin_country": "Germany",
-    "lat": 48.3501,
-    "lon": 16.4471,
-    "alt": 1257.3,
-    "velocity": 108.26
-  },
-  {
-    "callsign": "DHK045  ",
+    "callsign": "BAW277  ",
     "origin_country": "United Kingdom",
-    "lat": 50.9392,
-    "lon": 13.6123,
-    "alt": 5577.84,
-    "velocity": 177.89
+    "lat": 49.1335,
+    "lon": 15.3829,
+    "alt": 11879.58,
+    "velocity": 267.56
   },
   {
-    "callsign": "RYR26TQ ",
-    "origin_country": "Malta",
-    "lat": 50.173,
-    "lon": 14.1112,
-    "alt": 2026.92,
-    "velocity": 132.17
+    "callsign": "GASTN23 ",
+    "origin_country": "Czech Republic",
+    "lat": 49.914,
+    "lon": 14.8361,
+    "alt": 777.24,
+    "velocity": 31.65
   },
   {
-    "callsign": "EZY45MQ ",
-    "origin_country": "United Kingdom",
-    "lat": 51.5344,
-    "lon": 16.1315,
-    "alt": 10972.8,
-    "velocity": 210.67
-  },
-  {
-    "callsign": "SWR41L  ",
-    "origin_country": "Switzerland",
-    "lat": 50.4447,
-    "lon": 12.472,
-    "alt": 10972.8,
-    "velocity": 202.15
-  },
-  {
-    "callsign": "RYR472F ",
+    "callsign": "LOT6ED  ",
     "origin_country": "Poland",
-    "lat": 49.6245,
-    "lon": 15.2666,
-    "alt": 5570.22,
-    "velocity": 176.37
+    "lat": 51.3896,
+    "lon": 13.8581,
+    "alt": 10972.8,
+    "velocity": 186.16
   },
   {
-    "callsign": "DLH6MC  ",
+    "callsign": "LOT225  ",
+    "origin_country": "Poland",
+    "lat": 48.3687,
+    "lon": 16.4729,
+    "alt": 1836.42,
+    "velocity": 87.49
+  },
+  {
+    "callsign": "LOT3AN  ",
+    "origin_country": "Poland",
+    "lat": 48.7841,
+    "lon": 12.4923,
+    "alt": 3825.24,
+    "velocity": 146.32
+  },
+  {
+    "callsign": "BTI8BX  ",
+    "origin_country": "Latvia",
+    "lat": 48.3925,
+    "lon": 12.1574,
+    "alt": 1272.54,
+    "velocity": 116.41
+  },
+  {
+    "callsign": "MSC2974 ",
+    "origin_country": "Egypt",
+    "lat": 51.4322,
+    "lon": 12.2357,
+    "alt": null,
+    "velocity": 36.01
+  },
+  {
+    "callsign": "DLA4NK  ",
+    "origin_country": "Italy",
+    "lat": 50.1956,
+    "lon": 14.5122,
+    "alt": 1264.92,
+    "velocity": 103.59
+  },
+  {
+    "callsign": "KAL970  ",
+    "origin_country": "Republic of Korea",
+    "lat": 50.108,
+    "lon": 14.2637,
+    "alt": null,
+    "velocity": 0.39
+  },
+  {
+    "callsign": "TUA424  ",
+    "origin_country": "Turkmenistan",
+    "lat": 48.7623,
+    "lon": 17.1206,
+    "alt": 10668,
+    "velocity": 257.9
+  },
+  {
+    "callsign": "ASL30K  ",
+    "origin_country": "Latvia",
+    "lat": 48.3666,
+    "lon": 13.4136,
+    "alt": 10972.8,
+    "velocity": 209.27
+  },
+  {
+    "callsign": "BTI78F  ",
+    "origin_country": "Latvia",
+    "lat": 48.5335,
+    "lon": 12.3563,
+    "alt": 1577.34,
+    "velocity": 134.31
+  },
+  {
+    "callsign": "JOKER28 ",
     "origin_country": "Germany",
-    "lat": 48.3668,
-    "lon": 11.8204,
-    "alt": 434.34,
+    "lat": 51.651,
+    "lon": 12.7026,
+    "alt": 381,
+    "velocity": 0.51
+  },
+  {
+    "callsign": "AFR63TL ",
+    "origin_country": "France",
+    "lat": 51.162,
+    "lon": 14.8185,
+    "alt": 11582.4,
+    "velocity": 194.41
+  },
+  {
+    "callsign": "AFR31WZ ",
+    "origin_country": "France",
+    "lat": 50.18,
+    "lon": 12.5877,
+    "alt": 8519.16,
+    "velocity": 182.53
+  },
+  {
+    "callsign": "PWF79   ",
+    "origin_country": "Germany",
+    "lat": 51.0932,
+    "lon": 13.299,
+    "alt": 5791.2,
+    "velocity": 148.81
+  },
+  {
+    "callsign": "RYR17EF ",
+    "origin_country": "Ireland",
+    "lat": 50.7936,
+    "lon": 16.5891,
+    "alt": 10972.8,
+    "velocity": 195.89
+  },
+  {
+    "callsign": "AUA289  ",
+    "origin_country": "Austria",
+    "lat": 51.7991,
+    "lon": 12.1884,
+    "alt": 11178.54,
+    "velocity": 209.29
+  },
+  {
+    "callsign": "AUA249  ",
+    "origin_country": "Austria",
+    "lat": 48.7895,
+    "lon": 13.5339,
+    "alt": 9753.6,
+    "velocity": 197.45
+  },
+  {
+    "callsign": "AUA277  ",
+    "origin_country": "Austria",
+    "lat": 48.5099,
+    "lon": 14.2675,
+    "alt": 10264.14,
+    "velocity": 195.07
+  },
+  {
+    "callsign": "AUA997  ",
+    "origin_country": "Austria",
+    "lat": 51.7939,
+    "lon": 13.8596,
+    "alt": 10980.42,
+    "velocity": 231.44
+  },
+  {
+    "callsign": "LOT7VA  ",
+    "origin_country": "Poland",
+    "lat": 50.3943,
+    "lon": 13.4403,
+    "alt": 10972.8,
+    "velocity": 183.6
+  },
+  {
+    "callsign": "DEEFI   ",
+    "origin_country": "Germany",
+    "lat": 50.7698,
+    "lon": 12.8526,
+    "alt": 640.08,
+    "velocity": 37.22
+  },
+  {
+    "callsign": "RYR850H ",
+    "origin_country": "Ireland",
+    "lat": 51.4585,
+    "lon": 14.5305,
+    "alt": 11277.6,
+    "velocity": 251.05
+  },
+  {
+    "callsign": "VIR385E ",
+    "origin_country": "United Kingdom",
+    "lat": 49.1395,
+    "lon": 15.581,
+    "alt": 12192,
+    "velocity": 229.92
+  },
+  {
+    "callsign": "EWG17X  ",
+    "origin_country": "Germany",
+    "lat": 48.4446,
+    "lon": 15.7612,
+    "alt": 3474.72,
+    "velocity": 180
+  },
+  {
+    "callsign": "FHM862  ",
+    "origin_country": "Malta",
+    "lat": 48.3135,
+    "lon": 16.7608,
+    "alt": 11277.6,
+    "velocity": 222.94
+  },
+  {
+    "callsign": "CXI67VX ",
+    "origin_country": "Malta",
+    "lat": 48.3459,
+    "lon": 13.8273,
+    "alt": 11582.4,
+    "velocity": 222.24
+  },
+  {
+    "callsign": "AUA235D ",
+    "origin_country": "Austria",
+    "lat": 49.8848,
+    "lon": 15.2382,
+    "alt": 9144,
+    "velocity": 240.62
+  },
+  {
+    "callsign": "AUA187  ",
+    "origin_country": "Austria",
+    "lat": 48.3431,
+    "lon": 11.7818,
+    "alt": null,
+    "velocity": 25.21
+  },
+  {
+    "callsign": "ASL88K  ",
+    "origin_country": "Serbia",
+    "lat": 51.4477,
+    "lon": 17.1633,
+    "alt": 10980.42,
+    "velocity": 225.49
+  },
+  {
+    "callsign": "DUSTY18 ",
+    "origin_country": "United States",
+    "lat": 49.663,
+    "lon": 11.9753,
+    "alt": 853.44,
+    "velocity": 55.29
+  },
+  {
+    "callsign": "KMM308  ",
+    "origin_country": "Malta",
+    "lat": 48.3467,
+    "lon": 11.78,
+    "alt": null,
+    "velocity": 11.32
+  },
+  {
+    "callsign": "SAS1761 ",
+    "origin_country": "Ireland",
+    "lat": 51.8508,
+    "lon": 14.1138,
+    "alt": 9715.5,
+    "velocity": 216.27
+  },
+  {
+    "callsign": "DLA8HW  ",
+    "origin_country": "Italy",
+    "lat": 48.3672,
+    "lon": 11.8259,
+    "alt": 533.4,
     "velocity": 70.45
   },
   {
-    "callsign": "DLH1FR  ",
-    "origin_country": "Germany",
-    "lat": 48.3594,
-    "lon": 12.0278,
-    "alt": 1196.34,
-    "velocity": 96.11
+    "callsign": "DLA5TN  ",
+    "origin_country": "Italy",
+    "lat": 48.3538,
+    "lon": 11.9219,
+    "alt": 998.22,
+    "velocity": 85.96
   },
   {
-    "callsign": "HBJLE   ",
-    "origin_country": "Switzerland",
-    "lat": 51.5805,
-    "lon": 12.0525,
-    "alt": 11666.22,
-    "velocity": 220.97
-  },
-  {
-    "callsign": "SVA117  ",
-    "origin_country": "Saudi Arabia",
-    "lat": 50.0044,
-    "lon": 13.0173,
-    "alt": 12192,
-    "velocity": 232.03
-  },
-  {
-    "callsign": "QTR005  ",
-    "origin_country": "Qatar",
-    "lat": 48.5163,
-    "lon": 14.0908,
-    "alt": 12192,
-    "velocity": 223.14
-  },
-  {
-    "callsign": "RYR468Q ",
+    "callsign": "RYR62HE ",
     "origin_country": "Poland",
-    "lat": 48.8869,
-    "lon": 14.2739,
+    "lat": 50.074,
+    "lon": 12.7285,
     "alt": 10972.8,
-    "velocity": 210.6
+    "velocity": 194.63
   },
   {
-    "callsign": "RYR8071 ",
+    "callsign": "LOT5YB  ",
     "origin_country": "Poland",
-    "lat": 49.0912,
-    "lon": 17.067,
-    "alt": 1600.2,
-    "velocity": 102.89
+    "lat": 50.8797,
+    "lon": 16.8853,
+    "alt": 9448.8,
+    "velocity": 270.18
   },
   {
-    "callsign": "OKBYI   ",
-    "origin_country": "Czech Republic",
-    "lat": 50.2772,
-    "lon": 14.506,
-    "alt": 632.46,
-    "velocity": 42.85
-  },
-  {
-    "callsign": "DLH3LC  ",
-    "origin_country": "Germany",
-    "lat": 51.4571,
-    "lon": 13.2393,
-    "alt": 7254.24,
-    "velocity": 221.35
-  },
-  {
-    "callsign": "DLH4WE  ",
-    "origin_country": "Germany",
-    "lat": 48.4215,
-    "lon": 12.1272,
-    "alt": 1516.38,
-    "velocity": 112.43
-  },
-  {
-    "callsign": "DLH3RY  ",
-    "origin_country": "Germany",
-    "lat": 48.357,
-    "lon": 11.7941,
+    "callsign": "HYP001  ",
+    "origin_country": "Malta",
+    "lat": 50.0992,
+    "lon": 14.2855,
     "alt": null,
-    "velocity": 9.26
+    "velocity": 0
+  },
+  {
+    "callsign": "EDL8    ",
+    "origin_country": "Germany",
+    "lat": 48.8977,
+    "lon": 12.4779,
+    "alt": 762,
+    "velocity": 43.84
+  },
+  {
+    "callsign": "QTR24R  ",
+    "origin_country": "Qatar",
+    "lat": 48.456,
+    "lon": 14.5855,
+    "alt": 11277.6,
+    "velocity": 255.09
+  },
+  {
+    "callsign": "WZZ93HQ ",
+    "origin_country": "Malta",
+    "lat": 49.5012,
+    "lon": 17.1773,
+    "alt": 11582.4,
+    "velocity": 183.28
+  },
+  {
+    "callsign": "OEKAA   ",
+    "origin_country": "Austria",
+    "lat": 48.304,
+    "lon": 13.1488,
+    "alt": 2179.32,
+    "velocity": 60.04
+  },
+  {
+    "callsign": "QTR85P  ",
+    "origin_country": "Qatar",
+    "lat": 49.3887,
+    "lon": 15.111,
+    "alt": 11887.2,
+    "velocity": 268.48
+  },
+  {
+    "callsign": "EXS31ED ",
+    "origin_country": "United Kingdom",
+    "lat": 48.793,
+    "lon": 15.3787,
+    "alt": 10972.8,
+    "velocity": 212.27
+  },
+  {
+    "callsign": "AEE7RE  ",
+    "origin_country": "Greece",
+    "lat": 48.3489,
+    "lon": 16.114,
+    "alt": 10668,
+    "velocity": 225.86
+  },
+  {
+    "callsign": "SWU1951 ",
+    "origin_country": "Malta",
+    "lat": 50.5597,
+    "lon": 13.437,
+    "alt": 5768.34,
+    "velocity": 170.93
+  },
+  {
+    "callsign": "DLH8EL  ",
+    "origin_country": "Germany",
+    "lat": 49.4544,
+    "lon": 14.8866,
+    "alt": 10378.44,
+    "velocity": 196.74
+  },
+  {
+    "callsign": "DLH3LX  ",
+    "origin_country": "Germany",
+    "lat": 48.3762,
+    "lon": 11.9434,
+    "alt": 1021.08,
+    "velocity": 70.39
+  },
+  {
+    "callsign": "THA922  ",
+    "origin_country": "Thailand",
+    "lat": 48.3435,
+    "lon": 13.7774,
+    "alt": 10363.2,
+    "velocity": 230.21
   }
 ]
