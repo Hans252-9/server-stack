@@ -8,6 +8,7 @@ COPY scripts/ /opt/app/scripts/
 RUN chmod +x /opt/app/scripts/*/*.sh
 
 RUN mkdir /var/log/app
+RUN mkdir /var/log/app/airdata
 
 RUN printf "* * * * * /opt/app/scripts/monitor/monitor.sh > /var/log/app/monitor.log 2>&1\n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
 RUN printf "*/5 * * * * /opt/app/scripts/weather/weather.sh > /var/log/app/weather.log 2>&1\n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root

@@ -4,7 +4,7 @@
 # Datum: Mon Oct 27 13:25:51 UTC 2025
 
 json=/opt/app/scripts/nasa/apod.json
-picture=/opt/app/scripts/nasa/apod.jpg
+picture=/var/log/app/apod.jpg
 
 
 url=$(curl -s "https://api.nasa.gov/planetary/apod?api_key=YoP0mZxujKOeBRem9Szf4BhVh0Qs96DeU7Guzxyy" | jq -r '.url')

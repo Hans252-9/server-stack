@@ -3,7 +3,7 @@
 # Author: hans
 # Datum: Mon Oct 27 18:06:06 UTC 2025
 
-json="/var/log/app/airdata/airplanes.json"
+json="/var/log/app/airplanes.json"
 la_min="48.27"
 la_max="51.88"
 lo_min="11.63"
