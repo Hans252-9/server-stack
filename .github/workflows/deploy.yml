@@ -20,6 +20,7 @@ jobs:
           key: ${{ secrets.GCP_KEY }}
           script: |
             cd ~/server-stack
-            git pull
+            git fetch origin
+            git reset --hard origin/master
             docker compose down
             docker compose up -d --build

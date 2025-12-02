@@ -3,7 +3,6 @@
 # Author: hans
 # Datum: Mon Oct 27 13:25:51 UTC 2025
 
-json=/opt/app/scripts/nasa/apod.json
 picture=/var/log/app/apod.jpg
 
 
