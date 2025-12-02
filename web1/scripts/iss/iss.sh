@@ -6,6 +6,9 @@
 json="/var/log/app/iss.json"
 iss_track="/var/log/app/iss_track.json"
 
+if [ ! -f "$iss_track" ]; then
+    echo "[]" > "$iss_track"
+fi
 
 api=$(curl -s https://api.wheretheiss.at/v1/satellites/25544)
 
