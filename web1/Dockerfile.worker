@@ -14,6 +14,6 @@ RUN printf "*/5 * * * * /opt/app/scripts/weather/weather.sh > /var/log/app/weath
 RUN printf "*/5 * * * * /opt/app/scripts/portfolio/portfolio.sh > /var/log/app/portfolio.log 2>&1\n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
 RUN printf "* * * * * /opt/app/scripts/iss/iss.sh 2>&1\n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
 RUN printf "*/5 * * * * /opt/app/scripts/airplanes/airplanes.sh 2>&1\n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
-RUN printf "0 3 * * * /opt/app/scripts/nasa/nasa.sh 2>&1/n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
+RUN printf "0 3 * * * /opt/app/scripts/nasa/apod.sh 2>&1/n" >> /etc/crontabs/root && chmod 600 /etc/crontabs/root
 
 CMD ["crond", "-f", "-l", "2"]
