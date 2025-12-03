@@ -1,0 +1,3 @@
+hanslab.eu, www.hanslab.eu {
+    reverse_proxy web1:80
+}
