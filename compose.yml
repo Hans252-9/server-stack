@@ -4,7 +4,7 @@ services:
       context: ./web1
       dockerfile: ./Dockerfile.web
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./web1/web:/usr/share/nginx/html/web
       - ./web1/nginx.conf:/etc/nginx/conf.d/default.conf:ro
