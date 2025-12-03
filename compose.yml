@@ -42,7 +42,7 @@ services:
       - ./caddy/data:/data
       - ./caddy/config:/config
     depends_on:
-      -web1
+      - web1
 
   web2:
     build:
