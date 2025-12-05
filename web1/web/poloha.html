@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dráha Země kolem Slunce</title>
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: #f5f5f5;
+            font-family: system-ui, sans-serif;
+        }
+        .topbar {
+            padding: 12px;
+            background: #222;
+            color: #fff;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        select, input, button {
+            padding: 4px 6px;
+            font-size: 14px;
+        }
+        #orbit {
+            width: 100%;
+            height: 92vh;
+        }
+        #info {
+            margin-left: auto;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <span>Datum:</span>
+
+    <select id="daySelect"></select>
+
+    <select id="monthSelect">
+        <option value="1">Leden</option>
+        <option value="2">Únor</option>
+        <option value="3">Březen</option>
+        <option value="4">Duben</option>
+        <option value="5">Květen</option>
+        <option value="6">Červen</option>
+        <option value="7">Červenec</option>
+        <option value="8">Srpen</option>
+        <option value="9">Září</option>
+        <option value="10">Říjen</option>
+        <option value="11">Listopad</option>
+        <option value="12">Prosinec</option>
+    </select>
+
+    <input id="yearInput" type="number" value="2025" style="width:80px">
+    <button id="updateBtn">Přepočítat</button>
+
+    <span id="info"></span>
+</div>
+
+<div id="orbit"></div>
+
+<script>
+// ====================== KONSTANTY ======================
+const e = 0.0167;                 // excentricita
+const a = 1.0;                    // velká poloosa v AU
+const yearDays = 365.256;         // siderický rok
+const periLong = 102.9 * Math.PI / 180;  // délka perihelia (rad)
+const EARTH_TRACE_INDEX = 6;      // index trace Země v poli traces
+
+function toRad(deg) { return deg * Math.PI / 180; }
+function toDeg(rad) { return rad * 180 / Math.PI; }
+
+function normalizeAngle(rad) {
+    rad %= 2 * Math.PI;
+    return rad < 0 ? rad + 2 * Math.PI : rad;
+}
+
+function daysBetween(d1, d2) {
+    return Math.round((d2 - d1) / (24*60*60*1000));
+}
+
+// ================= KEPLEROVA ROVNICE ==================
+function solveKepler(M, e, iters = 15) {
+    let E = M;
+    for (let i = 0; i < iters; i++) {
+        E = M + e * Math.sin(E);
+    }
+    return E;
+}
+
+// =============== POLOHA ZEMĚ Z DATA ===================
+function earthPosition(date) {
+    const peri = new Date(Date.UTC(date.getFullYear(), 0, 4)); // 4.1.
+    const dtDays = daysBetween(peri, date);
+
+    const n = 2 * Math.PI / yearDays;
+    let M = normalizeAngle(n * dtDays);
+    let Ecc = solveKepler(M, e);
+
+    let theta = 2 * Math.atan2(
+        Math.sqrt(1+e)*Math.sin(Ecc/2),
+        Math.sqrt(1-e)*Math.cos(Ecc/2)
+    );
+
+    let r = a*(1 - e*Math.cos(Ecc));
+
+    return { x: r*Math.cos(theta), y: r*Math.sin(theta), theta, r };
+}
+
+// ============== BODY ROČNÍCH OBDOBÍ ===================
+function seasonalPoint(lambdaDeg) {
+    let λ = toRad(lambdaDeg);
+    let θ = normalizeAngle(λ - Math.PI - periLong);
+    let r = a*(1-e*e)/(1 + e*Math.cos(θ));
+    return { x: r*Math.cos(θ), y: r*Math.sin(θ), theta: θ };
+}
+
+const seasonPoints = [
+    { name:"Jaro",   color:"green",  lambda: 0   },
+    { name:"Léto",   color:"red",    lambda: 90  },
+    { name:"Podzim", color:"orange", lambda: 180 },
+    { name:"Zima",   color:"blue",   lambda: 270 },
+];
+
+const seasonTraces = seasonPoints.map(season => {
+    let p = seasonalPoint(season.lambda);
+    return {
+        x: [p.x],
+        y: [p.y],
+        mode: "markers+text",
+        text: [season.name],
+        textposition: "top center",
+        marker: { color: season.color, size: 12 },
+        name: season.name,
+        hovertemplate: `${season.name}<br>λ = ${season.lambda}°<extra></extra>`
+    };
+});
+
+// ============== BAREVNÉ ÚSEKY SEZÓN ===================
+function seasonalArc(lambdaStart, lambdaEnd, color, name) {
+    const xs = [], ys = [];
+    const steps = 250;
+    for (let i=0; i<=steps; i++) {
+        let λ = lambdaStart + (lambdaEnd - lambdaStart)*(i/steps);
+        let θ = normalizeAngle(toRad(λ) - Math.PI - periLong);
+        let r = a*(1-e*e)/(1 + e*Math.cos(θ));
+        xs.push(r*Math.cos(θ));
+        ys.push(r*Math.sin(θ));
+    }
+    return {
+        x: xs,
+        y: ys,
+        mode: "lines",
+        line: { color: color, width: 4 },
+        name: name,
+        hovertemplate: `${name}<br>${lambdaStart}°–${lambdaEnd}°<extra></extra>`
+    };
+}
+
+const springArc = seasonalArc(0, 90, "green",  "Jaro");
+const summerArc = seasonalArc(90,180,"red",    "Léto");
+const autumnArc = seasonalArc(180,270,"orange","Podzim");
+const winterArc = seasonalArc(270,360,"blue",  "Zima");
+
+// ==================== ELIPSA ==========================
+function orbitPoints(steps = 600) {
+    const xs = [], ys = [];
+    for (let i=0; i<=steps; i++) {
+        let t = 2*Math.PI * i/steps;
+        let r = a*(1-e*e)/(1 + e*Math.cos(t));
+        xs.push(r*Math.cos(t));
+        ys.push(r*Math.sin(t));
+    }
+    return { xs, ys };
+}
+
+const orbit = orbitPoints();
+
+const orbitTrace = {
+    x: orbit.xs,
+    y: orbit.ys,
+    mode: "lines",
+    line: { color: "lightgray" },
+    name: "Dráha Země"
+};
+
+const sunTrace = {
+    x:[0], y:[0],
+    mode:"markers",
+    marker:{ color:"yellow", size:18 },
+    name:"Slunce",
+    hovertemplate: "Slunce (střed soustavy)<extra></extra>"
+};
+
+const earthTrace = {
+    x:[0], y:[0],
+    mode:"markers",
+    marker:{ color:"#00bcd4", size:20 },  // tyrkysová Země
+    name:"Země",
+    hovertemplate: "Země<br>x: %{x:.3f} AU<br>y: %{y:.3f} AU<extra></extra>"
+};
+
+// ==================== VYKRESLENÍ ======================
+Plotly.newPlot(
+    "orbit",
+    [
+        orbitTrace,
+        springArc, summerArc, autumnArc, winterArc,
+        sunTrace,
+        earthTrace,
+        ...seasonTraces
+    ],
+    {
+        xaxis:{ scaleanchor:"y", scaleratio:1, range:[-1.1,1.1], title:"x [AU]" },
+        yaxis:{ range:[-1.1,1.1], title:"y [AU]" },
+        margin:{ t:20 },
+        showlegend:true
+    }
+);
+
+// ==================== UI: DATUM =======================
+const daySelect = document.getElementById("daySelect");
+for (let d=1; d<=31; d++) {
+    const opt = document.createElement("option");
+    opt.value = d;
+    opt.textContent = d;
+    daySelect.appendChild(opt);
+}
+
+const monthSelect = document.getElementById("monthSelect");
+const yearInput = document.getElementById("yearInput");
+const info = document.getElementById("info");
+
+// nastav výchozí datum na dnešek
+const now = new Date();
+daySelect.value = now.getDate();
+monthSelect.value = now.getMonth() + 1;
+yearInput.value = now.getFullYear();
+
+function updateEarth() {
+    const day = parseInt(daySelect.value, 10);
+    const month = parseInt(monthSelect.value, 10);
+    const year = parseInt(yearInput.value, 10);
+
+    const date = new Date(Date.UTC(year, month-1, day));
+    const p = earthPosition(date);
+
+    // přepíšeme pozici trace Země (index EARTH_TRACE_INDEX = 6)
+    Plotly.restyle("orbit",
+        { x: [[p.x]], y: [[p.y]] },
+        EARTH_TRACE_INDEX
+    );
+
+    info.textContent = `r = ${p.r.toFixed(3)} AU, θ = ${toDeg(p.theta).toFixed(1)}°`;
+}
+
+document.getElementById("updateBtn").addEventListener("click", updateEarth);
+
+// první vykreslení pro aktuální datum
+updateEarth();
+</script>
+
+</body>
+</html>

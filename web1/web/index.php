@@ -23,6 +23,7 @@ date_default_timezone_set('Europe/Prague');
 <a href="/iss.html">Aktualni poloha ISS</a><br>
 <a href="/apod.jpg">Nasa picture of the day</a><br>
 <a href="/airplanes.html">Airplanes MAP</a>
+<a href="/poloha.html">Poloha zeme</a>
 </p>
 <hr>
 
