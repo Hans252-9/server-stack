@@ -3,7 +3,15 @@
 # Author: hans
 # Datum: Sun Oct 19 09:53:31 UTC 2025
 
+#DB nastaveni
+DB_HOST="${DB_HOST:-db}"
+DB_PORT="${DB_PORT:-5432}"
+DB_NAME="${DB_NAME:-monitoring}"
+DB_USER="${DB_USER:-monitor}"
+DB_PASS="${DB_PASS:-monitor_pass}"
+
 DISK=$(df -h | awk '/\/hostfs/ {print$5}' | tr -d '%')
+HOSTNAME="$(hostname)"
 
 ram_total=$(grep MemTotal /host/proc/meminfo | awk '{print$2}')
 ram_avail=$(grep MemAvailable /host/proc/meminfo | awk '{print $2}')
@@ -37,3 +45,11 @@ echo "Host srver je UP: ${days}d ${hours}h ${mins}m ${sec}s " > "$LOG"
 echo "Disk serveru je vyuzit z ${DISK}%" >> "$LOG"
 echo "Aktualni vyuziti CPU je: ${cpu_usage}%" >> "$LOG"
 echo "Aktualni vyuziti RAM je: ${RAM_PERCENT}%" >> "$LOG"
+
+#Insert do PostgreSQL
+PGPASSWORD="$DB_PASS" psql \
+  -h "$DB_HOST" \
+  -p "$DB_PORT" \
+  -U "$DB_USER" \
+  -d "$DB_NAME" \
+  -c "INSERT INTO server_stats (cpu_usage; ram_usage, disk_usage, hostname) VALUES ($cpu_usage, $RAM_PERCENT, $DISK, '$HOSTNAME');"
