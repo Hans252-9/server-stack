@@ -52,4 +52,4 @@ PGPASSWORD="$DB_PASS" psql \
   -p "$DB_PORT" \
   -U "$DB_USER" \
   -d "$DB_NAME" \
-  -c "INSERT INTO server_stats (cpu_usage; ram_usage, disk_usage, hostname) VALUES ($cpu_usage, $RAM_PERCENT, $DISK, '$HOSTNAME');"
+  -c "INSERT INTO server_stats (cpu_usage, ram_usage, disk_usage, hostname) VALUES ($cpu_usage, $RAM_PERCENT, $DISK, '$HOSTNAME');"
