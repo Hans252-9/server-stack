@@ -24,6 +24,17 @@ services:
       - ./:/hostfs:ro
       - /proc:/host/proc:ro
       - ./web1/web:/opt/app/web
+    environment:
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: monitoring
+      DB_USER: monitor
+      DB_PASS: monitor_pass
+    depends_on:
+      - php1
+      - db
+    restart: unless-stopped
+
   php1:
     image: php:8.2-fpm-alpine
     volumes:
@@ -54,3 +65,17 @@ services:
       - ./web2/index.html:/usr/share/nginx/html/index.html
       - ./web2/nginx.conf:/etc/nginx/conf.d/default.conf:ro
     restart: unless-stopped
+
+  db:
+    image: postgres:16
+    container_name: monitoring-postgres
+    environment:
+      POSTGRES_USER: monitor
+      POSTGRES_PASSWORD: monitor_pass
+      POSTGRES_DB: monitoring
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  pgdata:
