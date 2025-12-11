@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS stonks_prices (
+    id        SERIAL PRIMARY KEY,
+    ts        TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    TICKER    TEXT NOT NULL,
+    PRICE     NUMERIC(12,4) NOT NULL,
+    CURRENCY  TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_stonks_prices_TICKER_ts ON stonks_prices (TICKER, ts DESC);
