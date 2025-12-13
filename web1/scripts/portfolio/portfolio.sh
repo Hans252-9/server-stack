@@ -36,7 +36,7 @@ for s in "${symbols_czk[@]}"; do
     -p "$DB_PORT" \
     -U "$DB_USER" \
     -d "$DB_NAME" \
-    -c "INSERT INTO stonks_prices (TICKER, PRICE, CURRENCY) VALUES ($s, $price_czk, 'CZK');" > /dev/null
+    -c "INSERT INTO stonks_prices (TICKER, PRICE, CURRENCY) VALUES ('$s', $price_czk, 'CZK');" > /dev/null
 done
 
 for i in "${symbols_usd[@]}"; do
@@ -49,7 +49,7 @@ for i in "${symbols_usd[@]}"; do
     -p "$DB_PORT" \
     -U "$DB_USER" \
     -d "$DB_NAME" \
-    -c "INSERT INTO stonks_prices (TICKER, PRICE, CURRENCY) VALUES ($i, $price_usd, 'USD');" > /dev/null
+    -c "INSERT INTO stonks_prices (TICKER, PRICE, CURRENCY) VALUES ('$i', $price_usd, 'USD');" > /dev/null
 done
 
 usd_czk=$(curl -s "https://open.er-api.com/v6/latest/USD" | jq '.rates.CZK')
