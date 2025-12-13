@@ -3,6 +3,13 @@
 # Author: hans
 # Datum: Tue Oct 21 17:50:38 UTC 2025
 
+#DB nastaveni
+DB_HOST="${DB_HOST:-db}"
+DB_PORT="${DB_PORT:-5432}"
+DB_NAME="${DB_NAME:-monitoring}"
+DB_USER="${DB_USER:-monitor}"
+DB_PASS="${DB_PASS:-monitor_pass}"
+
 LOG="/var/log/app/weather.log"
 
 PRAHA_LAT=50.08
@@ -46,6 +53,28 @@ SNEZKA_TEMP=$(echo "$SNEZKA_DATA" | jq '.current_weather.temperature')
 HORSKA_KVILDA_TEMP=$(echo "$HORSKA_KVILDA_DATA" | jq '.current_weather.temperature')
 HRA_TEMP=$(echo "$HRA_DATA" | jq '.current_weather.temperature')
 
+insert_temp() {
+  local place="$1"
+  local temp="$2"
+
+  [ "$temp" = "null" ] && return
+
+#Insert do PostgreSQL
+  PGPASSWORD="$DB_PASS" psql \
+    -h "$DB_HOST" \
+    -p "$DB_PORT" \
+    -U "$DB_USER" \
+    -d "$DB_NAME" \
+    -c "INSERT INTO temperatures (place, temp_c) VALUES ('$place', $temp);" > /dev/null
+}
+
+insert_temp "PRAHA"         "$PRAHA_TEMP"
+insert_temp "BRNO"          "$BRNO_TEMP"
+insert_temp "OSTRAVA"       "$OSTRAVA_TEMP"
+insert_temp "NOVY_JICIN"    "$NOVY_JICIN_TEMP"
+insert_temp "SNEZKA"        "$SNEZKA_TEMP"
+insert_temp "HORSKA_KVILDA" "$HORSKA_KVILDA_TEMP"
+insert_temp "MALA_HRASTICE" "$HRA_TEMP"
 
 echo "PRAHA ${PRAHA_TEMP}°C | BRNO ${BRNO_TEMP}°C | OSTRAVA ${OSTRAVA_TEMP}°C | NOVY JICIN ${NOVY_JICIN_TEMP}°C | SNEZKA ${SNEZKA_TEMP}°C\
  | HORSKA KVILDA ${HORSKA_KVILDA_TEMP}°C | MALA HRASTICE ${HRA_TEMP}°C" > $LOG
