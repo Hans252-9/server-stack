@@ -106,8 +106,7 @@ services:
     image: grafana/grafana:latest
     container_name: grafana
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+    network_mode: host
     volumes:
       - grafana_data:/var/lib/grafana
 
