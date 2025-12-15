@@ -86,6 +86,7 @@ services:
     pid: host
     command:
       - --path.rootfs=/host
+    volumes:
       - /:/host:ro,rslave
 
 volumes:
