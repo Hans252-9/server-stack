@@ -78,5 +78,15 @@ services:
       - ./init-db:/docker-entrypoint-initdb.d
     restart: unless-stopped
 
+  node_exporter:
+    image: quay.io/prometheus/node-exporter:latest
+    container_name: node_exporter
+    restart: unless-stopped
+    network_mode: host
+    pid: host
+    command:
+      - --path.rootfs=/host
+      - /:/host:ro,rslave
+
 volumes:
   pgdata:
