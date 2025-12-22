@@ -8,6 +8,14 @@ hanslab.eu, www.hanslab.eu {
       reverse_proxy grafana:3000
     }
 
+    handle /public/* {
+      reverse_proxy grafana:3000
+    }
+
+    handle /api/* {
+      reverse_proxy grafana:3000
+    }
+
     handle {
       reverse_proxy web1:80
     }
