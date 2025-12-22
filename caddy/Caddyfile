@@ -1,6 +1,6 @@
 hanslab.eu, www.hanslab.eu {
 
-    handle_path /grafana/* {
+    handle /grafana/* {
       reverse_proxy grafana:3000
     }
 
