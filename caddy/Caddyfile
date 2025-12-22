@@ -1,27 +1,11 @@
 hanslab.eu, www.hanslab.eu {
 
-    handle /grafana/* {
-      reverse_proxy grafana:3000
-    }
-
-    handle /public-dashboards/* {
-      reverse_proxy grafana:3000
-    }
-
-    handle /public/* {
-      reverse_proxy grafana:3000
-    }
-
-    handle /api/* {
-      reverse_proxy grafana:3000
-    }
-
-    handle /avatars/* {
-      reverse_proxy grafana:3000
-    }
-
     handle /dashboard* {
-      redir /public-dashboards/af7aaa692cc3439b928d1743619a8514 302
+      redir /grafana/public-dashboards/af7aaa692cc3439b928d1743619a8514 302
+    }
+
+    handle /grafana* {
+      reverse_proxy grafana:3000
     }
 
     handle {
