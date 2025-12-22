@@ -114,7 +114,8 @@ services:
     environment:
       - GF_FEATURE_TOGGLES_ENABLE=publicDashboards
       - GF_SERVER_ROOT_URL=https://hanslab.eu/grafana/
-      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_SERVER_DOMAIN=hanslab.eu
+      - GF_SERVER_SERVE_FROM_SUB_PATH=false
     restart: unless-stopped
     networks: [mon]
     volumes:
