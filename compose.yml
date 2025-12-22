@@ -88,7 +88,7 @@ services:
     image: quay.io/prometheus/node-exporter:latest
     container_name: node_exporter
     restart: unless-stopped
-    network_mode: host
+    networks: [mon]
     pid: host
     command:
       - --path.rootfs=/host
