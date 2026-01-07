@@ -42,8 +42,8 @@ Kontejnery bezi ve spolecne docker siti.
 
 # Spusteni
 ```bash
-docker compose up - d ```
-
+docker compose up -d
+```
 # Poznamka
 Tato konfigurace slouzi pro nasazeni na mem serveru hanslab.eu.
 Pro lokalni spusteni je treba upravit nginx.conf Caddyfile.
