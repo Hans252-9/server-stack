@@ -4,14 +4,14 @@
 # Datum: Mon Oct 27 09:29:19 UTC 2025
 
 #DB nastaveni
-DB_HOST="${DB_HOST:-db}"
-DB_PORT="${DB_PORT:-5432}"
-DB_NAME="${DB_NAME:-monitoring}"
-DB_USER="${DB_USER:-monitor}"
-DB_PASS="${DB_PASS:-monitor_pass}"
+DB_HOST="${DB_HOST:?DB_HOST not set}"
+DB_PORT="${DB_PORT:?DB_PORT not set}"
+DB_NAME="${DB_NAME:?DB_NAME not set}"
+DB_USER="${DB_USER:?DB_USER not set}"
+DB_PASS="${DB_PASS:?DB_PASS not set}"
 
 api="https://finnhub.io/api/v1/quote"
-token="d3vk029r01qju1gsa400d3vk029r01qju1gsa40g"
+token="${FINNHUB_TOKEN:?FINNHUB_TOKEN not set}"
 symbols_usd=("MTB" "ASML" "STLA" "WSM" "META" "LULU" "IBIT" "TLT")
 symbols_czk=("CEZ.PR")
 log="/var/log/app/portfolio.log"
