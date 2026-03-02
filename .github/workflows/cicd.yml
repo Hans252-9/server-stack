@@ -28,7 +28,7 @@ jobs:
           context: ./web1
           file: ./web1/Dockerfile.web
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/hanslab-web1:${{ github.sha }}
+          tags: ghcr.io/hans252-9/hanslab-web1:${{ github.sha }}
 
       - name: Build & push worker1
         uses: docker/build-push-action@v6
@@ -36,7 +36,7 @@ jobs:
           context: ./web1
           file: ./web1/Dockerfile.worker
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/hanslab-worker1:${{ github.sha }}
+          tags: ghcr.io/hans252-9/hanslab-worker1:${{ github.sha }}
 
       - name: Build & push web2
         uses: docker/build-push-action@v6
@@ -44,7 +44,7 @@ jobs:
           context: ./web2
           file: ./web2/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/hanslab-web2:${{ github.sha }}
+          tags: ghcr.io/hans252-9/hanslab-web2:${{ github.sha }}
 
   deploy:
     needs: build_push
