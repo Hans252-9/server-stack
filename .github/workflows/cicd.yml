@@ -70,6 +70,7 @@ jobs:
             # Login do GHCR na serveru (read token)
             echo "${{ secrets.GHCR_READ_TOKEN }}" | docker login ghcr.io -u "${{ secrets.GHCR_USER }}" --password-stdin
 
+            docker compose -f compose.prod.yml down
             docker compose -f compose.prod.yml pull
             docker compose -f compose.prod.yml up -d
             docker image prune -f
